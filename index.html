@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+<div class="blog-slider">
+    <div class="blog-slider__wrp swiper-wrapper">
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img"> <img src="images/1.jpg" alt=""> </div>
+        <div class="blog-slider__content"> <span class="blog-slider__code">2019年12月18</span>
+        <div class="blog-slider__title">上班7年上错公司</div>
+        <div class="blog-slider__text">42岁的武汉单亲妈妈陈女士在一家影楼上班7年后，通过法院向影楼索要社保补贴，却发现自己上班的影楼与合同中不是同一家。</div>
+        <a href="#" class="blog-slider__button">详情</a> </div> 
+      </div>
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img"> <img src="images/2.jpg" alt=""> </div>
+       <div class="blog-slider__content"> <span class="blog-slider__code">2019年12月18</span>
+        <div class="blog-slider__title">马云要退休当老师</div>
+        <div class="blog-slider__text">马云表示，将于下周宣布公司传承计划，这是认真准备了10年的计划，让年轻一代才俊能接班</div>
+        <a href="#" class="blog-slider__button">详情</a> </div>
+      </div>
+  </div>
+    <div class="blog-slider__pagination"></div>
+  </div>
+
+<!-- Swiper JS --> 
+<script src="js/swiper.min.js"></script>
+
+<!-- Initialize Swiper --> 
+<script>
+    var swiper = new Swiper('.blog-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      autoHeight: true,
+      pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+      }
+    });
+  </script>
+</body>
+</html>
